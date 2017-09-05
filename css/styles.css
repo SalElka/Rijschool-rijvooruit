@@ -1,0 +1,336 @@
+/* variables */
+/* global styles */
+*, h1, h2, h3, h4, h5, h6, i {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #313131; }
+
+p {
+  color: rgba(49, 49, 49, 0.64); }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.button {
+  background-color: #f76262;
+  padding: .6rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 20px rgba(247, 2, 2, 0.26);
+  box-shadow: 0px 0px 20px rgba(247, 2, 2, 0.26); }
+  .button:hover {
+    background-color: rgba(247, 98, 98, 0.7);
+    cursor: pointer; }
+
+#logo {
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin: 0; }
+
+.heading_container_container {
+  text-align: center; }
+
+.heading_container {
+  display: inline-block;
+  margin: 0 auto; }
+
+.sectionheading {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center; }
+
+.headingline {
+  height: 0px;
+  padding: .5rem 0;
+  width: 54px;
+  border-bottom: 1px solid #f76262; }
+
+.whiteline {
+  height: 0px;
+  padding: .5rem 0;
+  width: 54px;
+  border-bottom: 1px solid #FFFFFF; }
+
+.subheading {
+  color: #f76262;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: .5rem; }
+
+.mainheading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 1rem; }
+
+.mainbody {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2; }
+
+hr {
+  border-bottom: 1px black solid;
+  opacity: .06;
+  margin: 0; }
+
+/* Banner styles */
+#banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  position: relative; }
+  #banner header {
+    padding: 2rem 0; }
+  #banner #logo {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.35rem;
+    float: left;
+    margin: 0; }
+  #banner nav {
+    float: right; }
+    #banner nav a {
+      color: #FFFFFF;
+      font-size: 0.9em;
+      font-weight: 400;
+      text-decoration: none;
+      margin-left: 2rem; }
+    #banner nav a:not(:last-child) {
+      -webkit-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+      transition: all .1s ease-in-out; }
+      #banner nav a:not(:last-child):hover {
+        color: #f76262; }
+  #banner .content {
+    padding: 7rem 0 5rem 0; }
+    #banner .content .title, #banner .content .subtitle {
+      color: #FFFFFF;
+      line-height: 1.5; }
+    #banner .content .title {
+      font-size: 2.8rem;
+      margin: 0;
+      padding: 1.5rem 0; }
+    #banner .content .title_separator {
+      border: 1px #FFFFFF solid;
+      max-width: 25%;
+      opacity: .25;
+      margin: 0; }
+    #banner .content .subtitle {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 1.5rem 0; }
+    #banner .content .fa-phone {
+      font-size: 1.25rem;
+      padding-right: 1rem;
+      color: #FFFFFF; }
+  #banner .floatboxwrapper {
+    position: relative;
+    background-color: pink; }
+    #banner .floatboxwrapper .floatbox {
+      position: absolute;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      width: 280px;
+      max-width: 90%;
+      margin-top: -3rem;
+      padding: 3rem 2rem;
+      -webkit-box-shadow: 0px 0px 57px rgba(49, 49, 49, 0.2);
+      box-shadow: 0px 0px 57px rgba(49, 49, 49, 0.2);
+      right: 0; }
+      #banner .floatboxwrapper .floatbox .floatbox_content {
+        text-align: center; }
+        #banner .floatboxwrapper .floatbox .floatbox_content .losse_price {
+          font-size: 5rem;
+          font-weight: 900;
+          margin: 0 auto;
+          padding-bottom: 1rem;
+          display: inline-block; }
+          #banner .floatboxwrapper .floatbox .floatbox_content .losse_price .label_price {
+            color: #f76262;
+            font-size: 1.125rem;
+            margin-left: 1em; }
+        #banner .floatboxwrapper .floatbox .floatbox_content .aanmeldenmain {
+          width: 100%;
+          padding: .8rem 1rem; }
+
+#service .content {
+  padding: 9.5rem 0 5rem 0; }
+  #service .content .service_copy {
+    width: 45%;
+    display: inline-block; }
+  #service .content img {
+    max-width: 50%;
+    border-radius: 4px;
+    float: right; }
+
+#service .voordelen {
+  padding: 5rem 0; }
+  #service .voordelen .voordelen_wrapper {
+    width: 100%;
+    padding: 8rem 0 2rem 0;
+    margin: 0px auto;
+    position: relative;
+    text-align: center; }
+    #service .voordelen .voordelen_wrapper .voordeel {
+      display: inline-block;
+      max-width: 23%;
+      min-width: 270px;
+      margin: 5px;
+      text-align: center; }
+      #service .voordelen .voordelen_wrapper .voordeel i {
+        color: #f76262;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem; }
+      #service .voordelen .voordelen_wrapper .voordeel .voordeeltitle {
+        font-size: 1.25rem;
+        margin-bottom: 1rem; }
+      #service .voordelen .voordelen_wrapper .voordeel .voordeeltext {
+        font-size: .9rem;
+        line-height: 1.5rem; }
+
+#tarieven {
+  background-image: url(../images/womandrivingbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #tarieven .content {
+    padding: 5rem 0; }
+    #tarieven .content .tarieven_wrapper {
+      width: 100%;
+      padding: 5rem 0;
+      font-size: 0; }
+      #tarieven .content .tarieven_wrapper .pricetable {
+        background-color: white;
+        display: inline-block;
+        width: 25%;
+        padding: 3rem 0;
+        text-align: center;
+        margin: 0;
+        font-size: 1rem;
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        z-index: 1; }
+        #tarieven .content .tarieven_wrapper .pricetable:hover {
+          -webkit-box-shadow: 0px 0px 77px rgba(34, 34, 34, 0.2);
+          box-shadow: 0px 0px 77px rgba(34, 34, 34, 0.2);
+          z-index: 2; }
+        #tarieven .content .tarieven_wrapper .pricetable i {
+          color: #f76262;
+          font-size: 3rem;
+          margin-bottom: 3rem; }
+        #tarieven .content .tarieven_wrapper .pricetable .price_label {
+          font-size: 1.25em;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 1.2rem; }
+        #tarieven .content .tarieven_wrapper .pricetable hr {
+          opacity: 0.05;
+          width: 75%;
+          margin: 0 auto;
+          margin-bottom: 1.2rem; }
+        #tarieven .content .tarieven_wrapper .pricetable .price_text {
+          margin-bottom: 10rem; }
+        #tarieven .content .tarieven_wrapper .pricetable .pricelabel_price {
+          color: #f76262;
+          font-size: 1.8rem; }
+    #tarieven .content .button {
+      display: block;
+      margin: 0 auto; }
+
+#aanmelden .content {
+  padding: 5rem 0 4rem 0; }
+  #aanmelden .content .mainbody {
+    margin-top: 2rem;
+    text-align: center; }
+  #aanmelden .content form {
+    padding: 2.5rem 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center; }
+    #aanmelden .content form .leftcontainer {
+      float: left;
+      width: 48%; }
+    #aanmelden .content form input[type=text], #aanmelden .content form input[type=email], #aanmelden .content form input[type=number] {
+      color: rgba(49, 49, 49, 0.64);
+      background-color: F3F3F3;
+      border: none;
+      border-radius: 4px;
+      display: block;
+      width: 100%;
+      padding: .8rem;
+      margin-bottom: 24px; }
+    #aanmelden .content form .rightcontainer {
+      float: right;
+      width: 48%; }
+    #aanmelden .content form textarea {
+      display: block;
+      background-color: F3F3F3;
+      color: rgba(49, 49, 49, 0.64);
+      border: none;
+      border-radius: 4px;
+      padding: .8rem;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 24px; }
+    #aanmelden .content form input[type=submit] {
+      display: block;
+      padding: .6em 3rem;
+      float: right; }
+
+footer .content {
+  padding: 4rem 0 2rem 0; }
+  footer .content .footer_div {
+    display: inline-block;
+    width: 24%;
+    margin-right: 5px;
+    float: left; }
+    footer .content .footer_div #logo {
+      color: rgba(49, 49, 49, 0.3);
+      padding-bottom: 1rem; }
+    footer .content .footer_div i {
+      color: rgba(49, 49, 49, 0.3);
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      -webkit-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+      transition: all .1s ease-in-out; }
+      footer .content .footer_div i:hover {
+        color: #f76262; }
+    footer .content .footer_div .footerlabel {
+      color: rgba(49, 49, 49, 0.3);
+      font-weight: 700;
+      padding-bottom: 1rem; }
+    footer .content .footer_div a.footerlink {
+      text-decoration: none;
+      color: rgba(49, 49, 49, 0.64);
+      display: block;
+      margin-bottom: 1rem;
+      -webkit-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+      transition: all .1s ease-in-out; }
+      footer .content .footer_div a.footerlink:hover {
+        color: #f76262; }
+  footer .content .copyright {
+    display: inline-block;
+    width: 100%;
+    padding: 5rem 0 0 0;
+    text-align: center;
+    font-size: .8rem;
+    color: rgba(49, 49, 49, 0.4); }
